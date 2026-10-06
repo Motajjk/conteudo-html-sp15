@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Conteúdo Aula12 - HTML</title>
+        <style>
+            
+            /* Alinhando divs com float */
+
+            .div-float {
+                width: 100%;
+                overflow: auto;
+            }
+
+            .div-float div {
+                width: 33%;
+                float: left;
+            }
+
+            /* Alinhando DIVs com o inline-block */
+
+            .div-inline-block {
+                width: 100%;
+            }
+            
+            .div-inline-block div {
+                    display: inline-block;
+            }
+
+            /* Alinhando DIVs com Flex */
+
+            .div-flex {
+                display: flex;
+            }
+
+            .div-flex div {
+                width: 33%;
+            }
+
+            /* Alinhando DIVs com o Grid */
+
+            .div-grid {
+                display: grid;
+                grid-template-columns: 33% 33% 33%;
+            }
+
+        </style>
+    </head>
+    <body>
+        
+        <h1>DIV em HTML</h1>
+
+        <h2>Romance em animes que NÃO são de romance (ué?)</h2>
+
+        <div style="background-color: yellow">
+            <h2>Gosto de analisar o romance nos animes</h2>
+            <p>Mesmo que por algum acaso...</p>
+            <p>O anime em questão não seja DE romance</p>
+        </div>
+        <hr>
+
+        <div style="background-color: black; width: 250px; margin: auto; color: aliceblue;">
+        <h2 style="text-align: center;"> Por que gosto tanto de fazer isso?</h2>
+        <p>Porque, na minha opinião, relacionamentos além da amizade é algo super normal e natural.</p>
+        <p>E também, eu acho que isso pode sim agregar para a história, para o desenvolvimento e relação entre os personagens.</p>
+        </div>
+        <hr>
+
+        <h2>Várias DIVs no documento</h2>
+
+        <h3>Casais que mais gosto em One Piece</h3>
+
+        <div style="background-color: orange">
+            <h2>Favorito</h2>
+            <p>SaNami</p>
+            <p>Sanji x Nami</p>
+        </div>
+
+        <div style="background-color: red;">
+            <h2>Gosto bastante</h2>
+            <p>LuHan</p>
+            <p>Luffy x Hancock</p>
+        </div>
+
+        <div style="background-color: greenyellow">
+            <h2>Acho interessante</h2>
+            <p>ZoRobin</p>
+            <p>Zoro x Robin</p>
+        </div>
+        <hr>
+
+        <h2>Alinhando DIVs lado a lado (Ex: Float)</h2>
+
+        <h3>Tem alguns outros casais que eu gosto também, mas que são menos interessantes que os principais</h3>
+
+        <div class="div-float";>
+            <div style="background-color: aqua;">
+            <h2>Legalzin</h2>
+            <p>Zoyori</p>
+            <p>Zoro x Hiyori</p>
+            </div>
+
+            <div style="background-color: yellow">
+            <h2>Legalzin</h2>
+            <p>Saboala</p>
+            <p>Sabo x Koala</p>
+            </div>
+
+            <div style="background-color: purple">
+            <h2>Legalzin</h2>
+            <p>LawRobin</p>
+            <p>Law x Robin</p>
+            </div>
+        </div>
+        
+        <br>
+
+        <h2>Alinhando DIVs com o inline-block</h2>
+        
+        <h3>Mais alguns legaizinhos</h3>
+
+        <div class="div-inline-block">
+            <div style="background-color: brown">
+            <h2>Legalzin</h2>
+            <p>UsoKaya</p>
+            <p>Usopp x Kaya</p>
+            </div>
+
+            <div style="background-color: deeppink">
+            <h2>Legalzin</h2>
+            <p>UsoPerona</p>
+            <p>Usopp x Perona</p>
+            </div>
+
+            <div style="background-color:blue">
+            <h2>Legalzin</h2>
+            <p>YamAce</p>
+            <p>Yamato x Ace</p>
+            </div>
+        </div>
+
+        <br>
+
+        <h2>Alinhando DIVs com Flex</h2>
+
+        <h3>Não para de ter legaizinhos :3</h3>
+
+        <div class="div-flex">
+            <div style="background-color: aqua;">
+            <h2>Legalzin</h2>
+            <p>Zoyori</p>
+            <p>Zoro x Hiyori</p>
+            </div>
+
+            <div style="background-color: yellow">
+            <h2>Legalzin</h2>
+            <p>Saboala</p>
+            <p>Sabo x Koala</p>
+            </div>
+
+            <div style="background-color: purple">
+            <h2>Legalzin</h2>
+            <p>LawRobin</p>
+            <p>Law x Robin</p>
+            </div>
+        </div>
+
+        <br>
+
+        <h2>Alinhando DIVs com Grid</h2>
+
+        <h3>Esses daqui definitivamente não são legaizinhos...</h3>
+
+        <div class="div-grid">
+            <div style="background-color: red">
+            <h2>Um lixo</h2>
+            <p>LuNami</p>
+            <p>Luffy x Nami</p>
+            </div>
+
+            <div style="background-color: darkred">
+            <h2>Um lixo</h2>
+            <p>SanPu</p>
+            <p>Sanji x Pudding</p>
+            </div>
+
+            <div style="background-color: red">
+            <h2>Um lixo</h2>
+            <p>LawRobin</p>
+            <p>Law x Robin</p>
+            </div>
+        </div>
+
+
+
+    </body>
+</html>
