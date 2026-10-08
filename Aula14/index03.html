@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Conteúdo Aula 14 - HTML</title>
+        <style>
+            body {
+                h1, h2, h3, p {
+                    color: ghostwhite;
+                }
+                background-color: black;
+            }
+            .AoAkaSkill {
+                background-color: black;
+                color: blue;
+                border: 1px solid ghostwhite;
+                border-radius: 10px;
+                width: 100px;
+                height: 45px;
+                cursor: pointer;
+            }
+
+            .MurasakiSkill {
+                background-color: black;
+                border: 1px solid ghostwhite;
+                border-radius: 10px;
+                width: 100px;
+                height: 45px;
+                cursor: pointer;
+                color: blueviolet;
+            }
+
+            .MurasakiSkill:hover {
+                background-color: blueviolet;
+                color: black;
+                cursor: pointer;
+                border: 1px solid blueviolet;
+                transition: 0.3s;
+            }
+
+            .AoAkaSkill:hover {
+                background-color: blue;
+                color: black;
+                cursor: pointer;
+                border: 1px solid red;
+                transition: 0.3s;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <h1>JavaScript no HTML</h1>
+
+        <h3>Alterando valores de atributos com o JavaScript</h3>
+        
+        <img style= "border: 1px solid blueviolet;" id="img-elemento" src="AkaAo.png" alt="Gojo unindo o Azul e o Vermelho" height="300" width="550">
+
+        <br>
+        <br>
+
+        <button class="AoAkaSkill" onclick="gojoSkill(0)">Aka + Ao</button>
+        <button class="MurasakiSkill" onclick="gojoSkill(1)">Murasaki</button>
+
+        <script>
+            function gojoSkill(skill) {
+                var nomeImagem;
+                if (skill == 0) {
+                    nomeImagem = "AkaAo.png";
+                 } else {
+                    nomeImagem = "VazioRoxo.png";
+                }
+
+                document.getElementById("img-elemento").src = nomeImagem;
+            }
+        </script>
+
+    </body>
+</html>

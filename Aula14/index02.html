@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Conteúdo Aula 14 - HTML</title>
+        <style>
+            .date {
+                background-color: aliceblue;
+                border: 2px solid blueviolet;
+                border-radius: 5px;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <h1>JavaScript no HTML</h1>
+
+        <h3>Venham me encontrar, fãs de GojoHime!</h3>
+
+        <button class="date"; onclick="document.getElementById('local').innerHTML = Date();">O maior fã de GojoHime está aqui!</button>
+        <p id="local"></p>
+        <hr>
+
+        <h3>Inserindo conteúdo em elementos com JavaScript</h3>
+
+        <p id="ola"></p>
+        <hr>
+
+        <h3>Alterando estilo de elemento com JavaScript</h3>
+
+        <p id="casal-lindo">GojoHime é lindo</p>
+        <button onclick="adicionarEstilo()">Make it pretty</button>
+
+
+        <script>
+            // Inserindo conteúdo com o JavaScript 
+            document.getElementById("ola").innerHTML = "Oiiie sim eu gosto de GojoHime :)";
+
+            // Alterando estilo do elemento com o JavaScript
+            function adicionarEstilo() {
+                document.getElementById("casal-lindo").style.color="blueviolet";
+                document.getElementById("casal-lindo").style.backgroundColor="ghostwhite";
+                document.getElementById("casal-lindo").style.border="2px solid blueviolet";
+                document.getElementById("casal-lindo").style.padding="10px";
+                document.getElementById("casal-lindo").style.fontFamily="sans-serif";
+                document.getElementById("casal-lindo").style.borderRadius="10px";
+
+                
+                
+            }
+        </script>
+
+    </body>
+</html>
