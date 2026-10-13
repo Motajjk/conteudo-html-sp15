@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Conteúdo Aula 16 - HTML</title>
+        <style>
+            
+            * {
+                box-sizing: border-box;
+            }
+            
+            .esquerda {
+                background-color: red;
+                padding: 20px;
+                width: 20%;
+                float: left;
+            }
+            
+            .meio {
+                background-color: yellow;
+                padding: 20px;
+                width: 60%;
+                float: left;
+            }
+            
+            .direita {
+                background-color: blueviolet;
+                padding: 20px;
+                width: 20%;
+                float: left;
+            }
+
+            @media screen and (max-width: 800px) {
+                .esquerda, .meio, .direita {
+                    width: 100%;
+                }
+                
+            }
+        </style>
+    </head>
+    <body>
+        
+        <h1>Responsividade no HTML</h1>
+
+        <h3>Imagem responsiva com width: 100%;</h3>
+
+        <img src="SanjiCarryingNami.jpeg" alt="Sanji carregando Nami em suas costas no início de Elbath." style="width: 100%;">
+        <hr>
+
+        <h3>Imagem responsiva com max-width: 100%;</h3>
+
+        <img src="SanjiCarryingNami.jpeg" alt="Sanji carregando Nami em suas costas no início de Elbath." style="max-width:100%;">
+        <hr>
+
+        <h3 style="font-size:4vw">Texto responsivo com a unidade de medida vw</h3>
+        <h3 style="font-size:3vw">O Sanji é um cavalheiro sem igual</h3>
+        <p style="font-size:2vw">Nas imagens acima, além de carregar Nami, Sanji posiciona as mãos de uma forma que elas não fiquemem seu corpo.</p>
+        <hr>
+
+        <h3 style="font-size:3vw">Responsividade com media query</h3>
+
+        <p style="font-size:2vw">Nem dá pra perceber o shipp que eu mais gosto hehe</p>
+
+        <div class="esquerda">
+            <p>LuHan (bem legal)</p>
+        </div>
+
+        <div class="meio">
+            <p>SaNami (O GOAT AAAAHHHNNN)</p>
+        </div>
+
+        <div class="direita">
+            <p>ZoroBin (bacana)</p>
+        </div>
+
+    </body>
+</html>
